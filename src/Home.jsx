@@ -1,7 +1,7 @@
 import Typed from "typed.js";
 import React from "react";
 import space from "/space.mp4";
-import viteLogo from "/vite.svg";
+import viteLogo from "/migo.svg";
 import { FaFacebookSquare, FaWhatsappSquare, FaInstagramSquare, FaRegEye } from "react-icons/fa";
 
 export default function Home() {
