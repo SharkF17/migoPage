@@ -1,6 +1,6 @@
 import Typed from "typed.js";
 import React from "react";
-import migo from "../public/migo.png";
+import migo from "/migo.png";
 import { FaFacebookSquare, FaWhatsappSquare, FaInstagramSquare, FaRegEye } from "react-icons/fa";
 
 export default function Home() {
@@ -28,12 +28,12 @@ export default function Home() {
   }, []);
   return (
     <>
-      <header className="justify-center text-center bg-moradologo space-y-16 py-20 border-rosa border-t-4 border-x-4 ">
+      <header className="justify-center text-center bg-moradologo/80 space-y-16 py-20 border-moradologo border-t-8 border-x-8 ">
         <div className="text-5xl text-white">
           <span ref={el}></span>
         </div>
-        <h1 className="text-9xl text-rosalogo font-bold">con MIGO</h1>
-        <div className="flex justify-center text-4xl text-rosalogo space-x-10">
+        <h2 className="text-9xl text-rosa font-bold">con MIGO</h2>
+        <div className="flex justify-center text-4xl text-moradologo space-x-10 bg-rosa/25">
           <FaFacebookSquare />
           <FaWhatsappSquare />
           <FaInstagramSquare />
