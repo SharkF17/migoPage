@@ -1,7 +1,6 @@
 import Typed from "typed.js";
 import React from "react";
-import space from "/space.mp4";
-import viteLogo from "/migo.svg";
+import migo from "../public/migo.png";
 import { FaFacebookSquare, FaWhatsappSquare, FaInstagramSquare, FaRegEye } from "react-icons/fa";
 
 export default function Home() {
@@ -42,7 +41,7 @@ export default function Home() {
       </header>
       
       <nav className="sticky justify-around items-center -top-0 flex bg-rosa py-4 text-lg font-bold">
-        <FaRegEye className="absolute"/>
+        <img src={migo} className="absolute w-12"/>
         <ul className="flex justify-around min-w-full">
           <a href="#">
             <li>Inicio</li>
