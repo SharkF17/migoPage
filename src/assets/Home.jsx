@@ -3,8 +3,8 @@ import marketing from "/marketing.jpg";
 export default function Home() {
   return (
     <>
-      <section className="min-h-screen bg-moradologo/80  text-rosa flex flex-row py-10">
-        <img src={marketing} alt="" className="object-cover w-1/2 min-h-full" />
+      <section className="min-h-screen bg-moradologo/80  text-rosa flex flex-row py-10 px-5">
+        <img src={marketing} alt="" className="object-cover w-1/2 min-h-full rounded-3xl" />
 
         <div className="w-1/2 m-10 space-y-10">
           <h1 className="font-black">Migo Digital</h1>
@@ -20,35 +20,35 @@ export default function Home() {
             Hemos desarrollado más de _____ proyectos exitosos con clientes de
             ____ países en ___ continentes.
           </p>
-          <div className="grid grid-cols-3 gap-5 m-5">
+          <div className="grid grid-cols-3 gap-5 m-5 ">
             <div>
-              <p>5</p>
+              <p className="text-white font-semibold">5</p>
               <p>Años</p>
             </div>
             <div>
-              <p>5</p>
+              <p className="text-white font-semibold">5</p>
               <p>Paises</p>
             </div>
             <div>
-              <p>2</p>
+              <p className="text-white font-semibold">2</p>
               <p>Continentes</p>
             </div>
             <div>
-              <p>50</p>
+              <p className="text-white font-semibold">50</p>
               <p>Clientes</p>
             </div>
             <div>
-              <p>50</p>
+              <p className="text-white font-semibold">50</p>
               <p>Proyectos</p>
             </div>
             <div>
-              <p>200 hrs</p>
+              <p className="text-white font-semibold">200 hrs</p>
               <p>Contenido Audiovisual</p>
             </div>
           </div>
         </div>
       </section>
-      <section className="bg-moradologo/90 py-10 min-h-screen text-rosa font-bold flex flex-row">
+      <section className="bg-moradologo/90 py-10 px-5 min-h-screen text-rosa flex flex-row">
         <div className="w-1/2">
           <h2 className="font-extrabold">Somos una agencia internacional</h2>
           <h3>
@@ -58,15 +58,15 @@ export default function Home() {
           </h3>
           <ul>
             <p>Actualmente trabajamos con clientes de varios países:</p>
+            <li>México</li>
+            <li>USA</li>
+            <li>Panama</li>
+            <li>Colombia</li>
+            <li>Portugal</li>
+            <li>Argentina</li>
           </ul>
-          <li>México</li>
-          <li>USA</li>
-          <li>Panama</li>
-          <li>Colombia</li>
-          <li>Portugal</li>
-          <li>Argentina</li>
         </div>
-        <img src={marketing} alt="" className="object-cover w-1/2 min-h-full"/>
+        <img src={marketing} alt="" className="object-cover w-1/2 min-h-full rounded-3xl" />
       </section>
     </>
   );
