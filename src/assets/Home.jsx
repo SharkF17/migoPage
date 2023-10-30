@@ -68,6 +68,13 @@ export default function Home() {
         </div>
         <img src={marketing} alt="" className="object-cover w-1/2 min-h-full"/>
       </section>
+      <section className="min-h-screen bg-moradologo/80 text-rosa flex flex-row py-10">
+        <img src={marketing} alt="" className="object-cover w-1/2 min-h-full"/>
+        <div>
+          <h2>Clientes que confían en Migo Digital</h2>
+          <p>Migo Digital es la agencia de Marketing Digital ideal para empresas líderes en su area. Ya sean nacionales o internacionales</p>
+        </div>
+      </section>
     </>
   );
 }
