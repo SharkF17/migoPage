@@ -3,13 +3,18 @@ import marketing from "/marketing.jpg";
 export default function Home() {
   return (
     <>
-      <section className="min-h-screen bg-moradologo/80  text-rosa flex flex-row py-10 px-5">
-        <img src={marketing} alt="" className="object-cover w-1/2 min-h-full rounded-3xl" />
+      <section className="min-h-screen bg-azulin/80  text-rosin flex flex-row py-10 px-5">
+        <img
+          src={marketing}
+          alt=""
+          className="object-cover w-1/2 min-h-full rounded-3xl"
+        />
 
         <div className="w-1/2 m-10 space-y-10">
-          <h1 className="font-black">Migo Digital</h1>
+          <h1 className="font-black text-amarillin">Migo Digital</h1>
           <h2 className="font-bold">
-            Tu A<span className="text-white">MIGO</span> en Marketing Digital
+            Tu A<span className="text-amarillin">MIGO</span> en Marketing
+            Digital
           </h2>
           <p>
             Somos la agencia mas eficiente de marketing digital en México y
@@ -48,9 +53,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-moradologo/90 py-10 px-5 min-h-screen text-rosa flex flex-row">
+      <section className="bg-azulin/90 py-10 px-5 min-h-screen text-rosin flex flex-row">
         <div className="w-1/2">
-          <h2 className="font-extrabold">Somos una agencia internacional</h2>
+          <h2 className="font-extrabold text-amarillin">
+            Somos una agencia internacional
+          </h2>
           <h3>
             A lo largo de estos años, hemos trabajado con empresas y marcas
             nacionales e internacionales, con proyectos en diversos idiomas como
@@ -66,15 +73,28 @@ export default function Home() {
             <li>Argentina</li>
           </ul>
         </div>
-        <img src={marketing} alt="" className="object-cover w-1/2 min-h-full rounded-3xl" />
+        <img
+          src={marketing}
+          alt=""
+          className="object-cover w-1/2 min-h-full rounded-3xl"
+        />
       </section>
-      <section className="min-h-screen bg-moradologo/80 text-rosa flex flex-row py-10">
-        <img src={marketing} alt="" className="object-cover w-1/2 min-h-full"/>
+      <section className="min-h-screen bg-azulin/80 text-rosin flex flex-row py-10">
+        <img src={marketing} alt="" className="object-cover w-1/2 min-h-full" />
         <div>
           <h2>Clientes que confían en Migo Digital</h2>
-          <p>Migo Digital es la agencia de Marketing Digital ideal para empresas líderes en su area. Ya sean nacionales o internacionales</p>
+          <p>
+            Migo Digital es la agencia de Marketing Digital ideal para empresas
+            líderes en su area. Ya sean nacionales o internacionales
+          </p>
         </div>
       </section>
+      <div>
+        <div className="bg-azulin h-5 w-5"></div>
+        <div className="bg-rosin h-5 w-5"></div>
+        <div className="bg-melonsin h-5 w-5"></div>
+        <div className="bg-amarillin h-5 w-5"></div>
+      </div>
     </>
   );
 }

@@ -1,7 +1,12 @@
 import Typed from "typed.js";
 import React from "react";
-import migo from "/migo.png";
-import { FaFacebookSquare, FaWhatsappSquare, FaInstagramSquare, FaRegEye } from "react-icons/fa";
+import migo from "/migo.png?url";
+import {
+  FaFacebookSquare,
+  FaWhatsappSquare,
+  FaInstagramSquare,
+  FaRegEye,
+} from "react-icons/fa";
 
 export default function Home() {
   const el = React.useRef(null);
@@ -28,20 +33,20 @@ export default function Home() {
   }, []);
   return (
     <>
-      <header className="justify-center text-center bg-moradologo/80 space-y-16 py-20 border-moradologo border-t-8 border-x-8 ">
+      <header className="justify-center text-center bg-azulin/80 space-y-16 py-20 border-azulin border-t-8 border-x-8 ">
         <div className="text-5xl text-white">
           <span ref={el}></span>
         </div>
-        <h2 className="text-9xl text-rosa font-bold">con MIGO</h2>
-        <div className="flex justify-center text-4xl text-moradologo space-x-10 bg-rosa/25">
+        <h2 className="text-9xl text-rosin font-bold">con MIGO</h2>
+        <div className="flex justify-center text-4xl text-azulin space-x-10 bg-rosin/50">
           <FaFacebookSquare />
           <FaWhatsappSquare />
           <FaInstagramSquare />
         </div>
       </header>
-      
-      <nav className="sticky justify-around items-center -top-0 flex bg-rosa py-4 text-lg font-bold">
-        <img src={migo} className="absolute w-12"/>
+
+      <nav className="sticky justify-around items-center -top-0 flex bg-melonsin/70 py-4 text-rosin text-lg font-bold">
+        <img src={migo} className="absolute w-12" />
         <ul className="flex justify-around min-w-full">
           <a href="#">
             <li>Inicio</li>
@@ -63,7 +68,6 @@ export default function Home() {
           </a>
         </ul>
       </nav>
-      
     </>
   );
 }
