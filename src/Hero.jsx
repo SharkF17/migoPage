@@ -45,9 +45,27 @@ export default function Home() {
           </div>
         </div>
         <div className="flex justify-center text-4xl text-azulin space-x-10 bg-melonsin/80">
-          <FaFacebookSquare />
-          <FaWhatsappSquare />
-          <FaInstagramSquare />
+          <a
+            href="https://www.facebook.com/migo.digital"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebookSquare />
+          </a>
+          <a
+            href="https://api.whatsapp.com/send?phone=5215630291304&text=¡Hola%21+Quiero+trabajar+con+Migo"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaWhatsappSquare />
+          </a>
+          <a
+            href="https://www.instagram.com/migo.digital/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagramSquare />
+          </a>
         </div>
       </header>
 

@@ -5,9 +5,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        rosa: "#fd9ed8",
-        rosalogo: "#ce0f55",
-        moradologo: "#702277",
+        migomorado: "#7B227C",
+        migorosa: "#CC0F5A",
+        migonegro: "#1D1D1B",
         azulin: "#0802A3",
         rosin: "#FF4B91",
         melonsin: "#FF7676",
