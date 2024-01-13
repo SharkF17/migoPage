@@ -1,6 +1,5 @@
 import Typed from "typed.js";
 import React from "react";
-import migo from "/migo.png?url";
 import logo from "/logo.svg?url";
 import {
   FaFacebookSquare,
@@ -9,7 +8,7 @@ import {
   FaRegEye,
 } from "react-icons/fa";
 
-export default function Home() {
+export default function Hero() {
   const el = React.useRef(null);
 
   React.useEffect(() => {
@@ -68,30 +67,6 @@ export default function Home() {
           </a>
         </div>
       </header>
-
-      <nav className="sticky justify-around items-center -top-0 flex bg-rosin py-4 text-azulin text-lg font-bold">
-        <img src={migo} className="absolute w-12" />
-        <ul className="flex justify-around min-w-full">
-          <a href="#">
-            <li>Inicio</li>
-          </a>
-          <a href="#">
-            <li>Proyectos</li>
-          </a>
-          <a href="#">
-            <li>Evolucion</li>
-          </a>
-          <a href="#">
-            <li>Nosotros</li>
-          </a>
-          <a href="#">
-            <li>Espacio</li>
-          </a>
-          <a href="#">
-            <li>Blog</li>
-          </a>
-        </ul>
-      </nav>
     </>
   );
 }
