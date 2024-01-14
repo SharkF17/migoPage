@@ -4,7 +4,9 @@ export default function Blog() {
   return (
     <>
       <Navbar />
-      <h2>Blog</h2>
+      <div className="min-h-screen">
+        <h2>Blog</h2>
+      </div>
     </>
   );
 }

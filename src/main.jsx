@@ -11,6 +11,7 @@ import Evolucion from "./pages/3.evolucion/Evolucion.jsx";
 import Nosotros from "./pages/4.nosotros/Nosotros.jsx";
 import Espacios from "./pages/5.espacios/Espacios.jsx";
 import Blog from "./pages/6.blog/Blog.jsx";
+import Footer from "./components/footer/Footer.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -23,6 +24,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/espacios" element={<Espacios />} />
         <Route path="/blog" element={<Blog />} />
       </Routes>
+
+      <Footer />
     </Router>
   </React.StrictMode>
 );

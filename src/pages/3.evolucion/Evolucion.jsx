@@ -4,7 +4,9 @@ export default function Evolucion() {
   return (
     <>
       <Navbar />
-      <h2>Evolucion</h2>
+      <div className="min-h-screen">
+        <h2>Evolucion</h2>
+      </div>
     </>
   );
 }

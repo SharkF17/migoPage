@@ -4,7 +4,9 @@ export default function Espacios() {
   return (
     <>
       <Navbar />
-      <h2>Espacios</h2>
+      <div className="min-h-screen">
+        <h2>Espacios</h2>
+      </div>
     </>
   );
 }

@@ -93,12 +93,6 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <div>
-        <div className="bg-azulin h-5 w-5"></div>
-        <div className="bg-rosin h-5 w-5"></div>
-        <div className="bg-melonsin h-5 w-5"></div>
-        <div className="bg-amarillin h-5 w-5"></div>
-      </div>
     </>
   );
 }
