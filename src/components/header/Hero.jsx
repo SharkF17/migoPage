@@ -18,6 +18,10 @@ export default function Hero() {
         "Trabaja",
         "Crea tu web",
         "Haz crecer tu empresa",
+        "Transforma tus ideas",
+        "Destaca tu creatividad",
+        "Conexiones que importan",
+        "Marca la diferencia",
       ],
       typeSpeed: 60,
       backSpeed: 30,
@@ -34,7 +38,7 @@ export default function Hero() {
   return (
     <>
       <header className="justify-center text-center bg-azulin/80 space-y-16 py-20 border-azulin border-t-8 border-x-8 ">
-        <div className="flex justify-center space-x-20">
+        <div className="flex justify-center space-x-28">
           <img src={logo} alt="" className="w-36" />
           <div>
             <div className="text-5xl text-white">
