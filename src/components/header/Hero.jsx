@@ -37,17 +37,17 @@ export default function Hero() {
   }, []);
   return (
     <>
-      <header className="justify-center text-center bg-azulin/80 space-y-16 py-20 border-azulin border-t-8 border-x-8 ">
-        <div className="flex justify-center space-x-28">
-          <img src={logo} alt="" className="w-36" />
+      <header className="justify-center text-center bg-migogris space-y-16 py-20 border-migonegro border-t-8 border-x-8 ">
+        <div className="flex justify-center items-center space-x-28">
+          <img src={logo} alt="" className="w-36 h-36 bg-white rounded-full" />
           <div>
             <div className="text-5xl text-white">
               <span ref={el}></span>
             </div>
-            <h2 className="text-9xl text-rosin font-bold">con MIGO</h2>
+            <h2 className="text-9xl text-migorosa font-bold">con MIGO</h2>
           </div>
         </div>
-        <div className="flex justify-center text-4xl text-azulin space-x-10 bg-melonsin/80">
+        <div className="flex justify-center text-4xl text-migomorado space-x-10 bg-migonaranja/80">
           <a
             href="https://www.facebook.com/migo.digital"
             target="_blank"
