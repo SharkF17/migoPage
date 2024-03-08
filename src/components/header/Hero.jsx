@@ -41,7 +41,7 @@ export default function Hero() {
         <div className="flex justify-center space-x-28">
           <img src={logo} alt="" className="w-36" />
           <div>
-            <div className="text-5xl text-white">
+            <div className="text-5xl text-black">
               <span ref={el}></span>
             </div>
             <h2 className="text-9xl text-rosin font-bold">con MIGO</h2>

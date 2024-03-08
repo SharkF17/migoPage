@@ -12,8 +12,8 @@ export default function Navbar() {
           <a href="/proyectos">
             <li>Proyectos</li>
           </a>
-          <a href="/evolucion">
-            <li>Evolucion</li>
+          <a href="/servicios">
+            <li>Servicios</li>
           </a>
           <a href="/nosotros">
             <li>Nosotros</li>

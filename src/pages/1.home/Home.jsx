@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Hero />
       <Navbar />
-      <section className="min-h-screen bg-azulin/80  text-rosin flex flex-row py-10 px-5">
+      <section className="min-h-screen bg-bgwhite  text-rosin flex flex-row py-10 px-5">
         <img
           src={marketing}
           alt=""
@@ -17,41 +17,37 @@ export default function Home() {
         <div className="w-1/2 m-10 space-y-10">
           <h1 className="font-black text-amarillin">Migo Digital</h1>
           <h2 className="font-bold">
-            Tu A<span className="text-amarillin">MIGO</span> en Marketing
-            Digital
+            Tus redes sociales con<span className="text-amarillin">MIGO</span>
           </h2>
           <p>
             Somos la agencia mas eficiente de marketing digital en México y
             desde la CDMX ofrecemos servicios integrales para marcas y empresas
             en todo el mundo.
           </p>
-          <p>
-            Hemos desarrollado más de _____ proyectos exitosos con clientes de
-            ____ países en ___ continentes.
-          </p>
+          <p>Hemos desarrollado más de 25 proyectos personalizados</p>
           <div className="grid grid-cols-3 gap-5 m-5 ">
             <div>
-              <p className="text-white font-semibold">5</p>
+              <p className="text-black font-semibold">4</p>
               <p>Años</p>
             </div>
             <div>
-              <p className="text-white font-semibold">5</p>
+              <p className="text-black font-semibold">4</p>
               <p>Paises</p>
             </div>
             <div>
-              <p className="text-white font-semibold">2</p>
+              <p className="text-black font-semibold">2</p>
               <p>Continentes</p>
             </div>
             <div>
-              <p className="text-white font-semibold">50</p>
+              <p className="text-black font-semibold">25+</p>
               <p>Clientes</p>
             </div>
             <div>
-              <p className="text-white font-semibold">50</p>
+              <p className="text-black font-semibold">25+</p>
               <p>Proyectos</p>
             </div>
             <div>
-              <p className="text-white font-semibold">200 hrs</p>
+              <p className="text-black font-semibold">200 hrs +</p>
               <p>Contenido Audiovisual</p>
             </div>
           </div>
@@ -91,6 +87,40 @@ export default function Home() {
             Migo Digital es la agencia de Marketing Digital ideal para empresas
             líderes en su area. Ya sean nacionales o internacionales
           </p>
+          <div className="grid grid-cols-3 gap-5 m-5 ">
+            <div>
+              <p className="text-black font-semibold">Nuestro Bosque</p>
+              <p>Kinder</p>
+            </div>
+            <div>
+              <p className="text-black font-semibold">Joca</p>
+              <p>Psicologo</p>
+            </div>
+            <div>
+              <p className="text-black font-semibold">Refricool Costaverde</p>
+              <p>Aires Acondicionados</p>
+            </div>
+            <div>
+              <p className="text-black font-semibold">Nverts</p>
+              <p>Consultoria Financiera</p>
+            </div>
+            <div>
+              <p className="text-black font-semibold">Montse Oscos</p>
+              <p>Psicologa</p>
+            </div>
+            <div>
+              <p className="text-black font-semibold">Unity</p>
+              <p>Corredoras</p>
+            </div>
+            <div>
+              <p className="text-black font-semibold">Royal Prestige</p>
+              <p>Articulos de Cocina</p>
+            </div>
+            <div>
+              <p className="text-black font-semibold">Mc Cofee</p>
+              <p>Parafernalia Canabica</p>
+            </div>
+          </div>
         </div>
       </section>
     </>
