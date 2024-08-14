@@ -35,19 +35,20 @@ export default function Hero() {
       typed.destroy();
     };
   }, []);
+
   return (
     <>
-      <header className="justify-center text-center bg-azulin/80 space-y-16 py-20 border-azulin border-t-8 border-x-8 ">
-        <div className="flex justify-center space-x-28">
+      <header className="border-azulin justify-center space-y-16 border-x-8 border-t-8 py-20 text-center">
+        <div className="flex flex-col items-center justify-center space-y-5">
           <img src={logo} alt="" className="w-36" />
           <div>
             <div className="text-5xl text-black">
               <span ref={el}></span>
             </div>
-            <h2 className="text-9xl text-rosin font-bold">con MIGO</h2>
+            <h2 className="text-7xl font-bold text-rosin">con MIGO</h2>
           </div>
         </div>
-        <div className="flex justify-center text-4xl text-azulin space-x-10 bg-melonsin/80">
+        <div className="text-azulin bg-melonsin/80 flex justify-center space-x-10 text-4xl">
           <a
             href="https://www.facebook.com/migo.digital"
             target="_blank"

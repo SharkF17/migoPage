@@ -4,9 +4,16 @@ import logo from "/logo.svg?url";
 export default function Footer() {
   return (
     <>
-      <div className="bg-migonegro flex text-white items-center justify-center space-x-20">
-        <img src={migo} alt="" className="w-16" />
-        <p>© 2024 Migo Digital. Todos los derechos reservados.</p>
+      <div className="fixed bottom-0 flex w-full flex-col items-center justify-center space-x-5 bg-migonegro text-white">
+        <div className="flex w-full flex-row justify-around">
+          <a href="/blog">Blog</a>
+          <a href="/espacios">Espacios</a>
+        </div>
+        {/* Estilizar link para blog */}
+
+        <p className="flex flex-row">
+          Hecho con ❤️ desde México. Migo Digital 2024.
+        </p>
       </div>
     </>
   );

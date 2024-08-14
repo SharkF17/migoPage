@@ -1,4 +1,5 @@
 import Navbar from "../../components/header/Navbar";
+import marketing from "/marketing.jpg";
 
 export default function Servicios() {
   return (
