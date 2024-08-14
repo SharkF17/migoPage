@@ -1,5 +1,6 @@
 import Navbar from "../../components/header/Navbar";
 import marketing from "/marketing.jpg";
+import phone from "/phone.jpg";
 
 export default function Clientes() {
   return (
@@ -28,7 +29,7 @@ export default function Clientes() {
             </ul>
           </div>
           <img
-            src={marketing}
+            src={phone}
             alt=""
             className="min-h-full w-1/2 rounded-3xl object-cover"
           />
