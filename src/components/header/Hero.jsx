@@ -60,7 +60,7 @@ export default function Hero() {
           />
         </div>
 
-        <div className="text-azulin bg-melonsin/80 flex justify-center space-x-10 text-4xl">
+        <div className="text-azulin bg-melonsin/80 flex justify-center space-x-10 text-4xl text-migomorado">
           <a
             href="https://www.facebook.com/migo.digital"
             target="_blank"
