@@ -43,7 +43,7 @@ export default function Hero() {
     <>
       <header
         id="hero"
-        className="border-azulin justify-center space-y-16 border-x-8 border-t-8 py-20 text-center"
+        className="border-azulin h-screen justify-center space-y-16 border-x-8 border-t-8 py-20 text-center"
       >
         <div className="flex flex-col items-center justify-center space-y-5">
           <img src={logo} alt="" className="w-36" />
