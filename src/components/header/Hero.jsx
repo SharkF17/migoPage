@@ -55,7 +55,7 @@ export default function Hero() {
           </div>
           <img
             src={curve}
-            className="relative left-0 top-full w-full md:w-1/2 xl:-mt-2"
+            className="relative left-0 top-full w-3/4 md:w-1/2 xl:-mt-2"
             alt="Curve"
           />
         </div>
