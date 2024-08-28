@@ -1,12 +1,15 @@
 import Typed from "typed.js";
 import React from "react";
 import logo from "/logo.svg?url";
+import curve from "/curve.png?url";
 import {
   FaFacebookSquare,
   FaWhatsappSquare,
   FaInstagramSquare,
   FaRegEye,
 } from "react-icons/fa";
+
+import { ScrollParallax } from "react-just-parallax";
 
 export default function Hero() {
   const el = React.useRef(null);
@@ -38,7 +41,10 @@ export default function Hero() {
 
   return (
     <>
-      <header className="border-azulin justify-center space-y-16 border-x-8 border-t-8 py-20 text-center">
+      <header
+        id="hero"
+        className="border-azulin justify-center space-y-16 border-x-8 border-t-8 py-20 text-center"
+      >
         <div className="flex flex-col items-center justify-center space-y-5">
           <img src={logo} alt="" className="w-36" />
           <div>
@@ -47,7 +53,13 @@ export default function Hero() {
             </div>
             <h2 className="text-7xl font-bold text-rosin">con MIGO</h2>
           </div>
+          <img
+            src={curve}
+            className="relative left-0 top-full w-1/2 xl:-mt-2"
+            alt="Curve"
+          />
         </div>
+
         <div className="text-azulin bg-melonsin/80 flex justify-center space-x-10 text-4xl">
           <a
             href="https://www.facebook.com/migo.digital"
