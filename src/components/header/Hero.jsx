@@ -48,14 +48,14 @@ export default function Hero() {
         <div className="flex flex-col items-center justify-center space-y-5">
           <img src={logo} alt="" className="w-36" />
           <div>
-            <div className="text-5xl text-black">
+            <div className="text-2xl text-black md:text-5xl">
               <span ref={el}></span>
             </div>
             <h2 className="text-7xl font-bold text-rosin">con MIGO</h2>
           </div>
           <img
             src={curve}
-            className="relative left-0 top-full w-1/2 xl:-mt-2"
+            className="relative left-0 top-full w-full md:w-1/2 xl:-mt-2"
             alt="Curve"
           />
         </div>
