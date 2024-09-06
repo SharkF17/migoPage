@@ -1,5 +1,5 @@
 import Navbar from "../../components/header/Navbar";
-import marketing from "/marketing.jpg";
+import colorido from "/colorido.jpg";
 
 export default function Nosotros() {
   return (
@@ -11,9 +11,9 @@ export default function Nosotros() {
         </h2>
         <section className="flex flex-col bg-bgwhite py-10 text-rosin md:flex-row md:space-x-14 md:px-10">
           <img
-            src={marketing}
+            src={colorido}
             alt=""
-            className="m-auto min-h-full w-4/5 rounded-3xl object-cover md:w-1/2"
+            className="m-auto h-[30rem] w-4/5 rounded-3xl object-cover md:w-1/2"
           />
 
           <div className="mx-auto my-10 w-4/5 space-y-10 text-lg md:font-semibold">
@@ -22,7 +22,9 @@ export default function Nosotros() {
               <span className="text-migomorado">MIGO</span>
             </h3>
             <p>
-              Somos la agencia mas eficiente de marketing digital en{" "}
+              Somos la agencia mas eficiente de{" "}
+              <span className="text-migomorado">Diseño</span> con{" "}
+              <span className="text-migomorado">Marketing</span> digital en{" "}
               <span className="text-migomorado">México</span> y desde la{" "}
               <span className="text-migomorado">CDMX</span> ofrecemos servicios
               integrales para marcas y empresas en todo el{" "}
