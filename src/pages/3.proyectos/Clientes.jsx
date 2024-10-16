@@ -8,37 +8,31 @@ export default function Clientes() {
       <Navbar />
       <div className="">
         <h2 className="bg-bgwhite pt-10 text-center text-4xl font-extrabold text-migomorado md:px-10 md:py-10 md:text-left md:text-5xl">
-          Somos una agencia internacional
+          Impulsando el Éxito Digital a nivel Internacional
         </h2>
         <section className="flex flex-col bg-bgwhite pb-10 text-rosin md:flex-row md:space-x-14 md:px-10">
           <div className="mx-auto my-10 w-4/5 space-y-10 text-lg md:font-semibold">
             <p>
-              A lo largo de estos años, hemos trabajado con empresas y marcas
-              nacionales e internacionales, con proyectos en diversos idiomas
-              como el inglés, portugués, francés, alemán, italiano, japonés y
-              coreano.
+              En nuestra agencia de comunicación y marketing digital, trabajamos
+              con una variedad de clientes que abarcan diferentes sectores y
+              tamaños de negocio. Desde emprendedores que buscan dar sus
+              primeros pasos en el mundo digital hasta grandes corporaciones que
+              desean fortalecer su presencia en línea, nos adaptamos a las
+              necesidades específicas de cada uno.
             </p>
-            <p>Actualmente trabajamos con clientes de varios países:</p>
-            <div className="m-5 grid grid-cols-3 gap-5">
-              <div>
-                <p className="font-semibold text-migomorado">México</p>
-              </div>
-              <div>
-                <p className="font-semibold text-migomorado">Colombia</p>
-              </div>
-              <div>
-                <p className="font-semibold text-migomorado">Panama</p>
-              </div>
-              <div>
-                <p className="font-semibold text-migomorado">Portugal</p>
-              </div>
-              <div>
-                <p className="font-semibold text-migomorado">Argentina</p>
-              </div>
-              <div>
-                <p className="font-semibold text-migomorado">USA</p>
-              </div>
-            </div>
+            <p>
+              Nos enorgullecemos de colaborar con empresas innovadoras que
+              valoran la importancia de una comunicación efectiva y una
+              estrategia de marketing digital bien planificada.
+            </p>
+            <p>
+              Nuestros clientes no solo nos eligen por nuestras habilidades
+              técnicas, sino por nuestra pasión por contar historias que
+              resuenen y por nuestro compromiso con su éxito. Creemos que el
+              crecimiento de nuestros clientes es nuestro propio crecimiento, y
+              estamos dedicados a ayudarlos a prosperar en el dinámico mundo
+              digital.
+            </p>
           </div>
           <img
             src={marketing}
@@ -50,7 +44,7 @@ export default function Clientes() {
 
       <div className="">
         <h2 className="bg-bgwhite px-5 pt-20 text-center text-4xl font-extrabold text-migomorado md:px-10 md:text-left md:text-5xl">
-          Clientes que confían en nosotros
+          Clientes con MIGO.
         </h2>
         <section className="flex flex-col bg-bgwhite py-10 text-rosin md:flex-row md:space-x-14 md:px-10">
           <img
@@ -60,10 +54,6 @@ export default function Clientes() {
           />
 
           <div className="mx-auto my-10 w-4/5 space-y-10 text-lg md:font-semibold">
-            <p>
-              Somos la agencia de Marketing Digital ideal para empresas líderes
-              en su area. Ya sean nacionales o internacionales
-            </p>
             <div className="m-auto grid grid-cols-3 gap-y-16 md:gap-x-10">
               <div>
                 <p className="font-semibold text-migomorado">Nuestro Bosque</p>
@@ -71,7 +61,7 @@ export default function Clientes() {
               </div>
               <div>
                 <p className="font-semibold text-migomorado">Joca</p>
-                <p>Psicologo</p>
+                <p>Método JOCA {"(Psicologia)"}</p>
               </div>
               <div>
                 <p className="font-semibold text-migomorado">
@@ -94,10 +84,6 @@ export default function Clientes() {
               <div>
                 <p className="font-semibold text-migomorado">Royal Prestige</p>
                 <p>Articulos de Cocina</p>
-              </div>
-              <div>
-                <p className="font-semibold text-migomorado">Mc Cofee</p>
-                <p>Parafernalia Canabica</p>
               </div>
             </div>
           </div>
