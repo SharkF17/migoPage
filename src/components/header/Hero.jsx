@@ -17,14 +17,15 @@ export default function Hero() {
   React.useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "Digitaliza tu negocio",
-        "Trabaja",
         "Crea tu web",
-        "Haz crecer tu empresa",
         "Transforma tus ideas",
         "Destaca tu creatividad",
-        "Conexiones que importan",
-        "Marca la diferencia",
+        "Haz crecer tu empresa",
+        "Digitalizate",
+        "Tus redes sociales",
+        "Trabaja",
+        "Tus ideas",
+        "Marketing Digital",
       ],
       typeSpeed: 60,
       backSpeed: 30,
