@@ -44,7 +44,7 @@ export default function Clientes() {
 
       <div className="">
         <h2 className="bg-bgwhite px-5 pt-20 text-center text-4xl font-extrabold text-migomorado md:px-10 md:text-left md:text-5xl">
-          Clientes con MIGO.
+          Clientes con MIGO
         </h2>
         <section className="flex flex-col bg-bgwhite py-10 text-rosin md:flex-row md:space-x-14 md:px-10">
           <img
