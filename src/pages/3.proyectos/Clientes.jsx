@@ -8,10 +8,14 @@ export default function Clientes() {
       <Navbar />
       <div className="">
         <h2 className="bg-bgwhite pt-10 text-center text-4xl font-extrabold text-migomorado md:px-10 md:py-10 md:text-left md:text-5xl">
-          Impulsando el Éxito Digital a nivel Internacional
+          Clientes
         </h2>
+
         <section className="flex flex-col bg-bgwhite pb-10 text-rosin md:flex-row md:space-x-14 md:px-10">
           <div className="mx-auto my-10 w-4/5 space-y-10 text-lg md:font-semibold">
+            <h3 className="bg-bgwhite text-center text-lg font-semibold text-migomorado md:text-left md:font-bold">
+              Impulsando el Éxito Digital a nivel Internacional
+            </h3>
             <p>
               En nuestra agencia de comunicación y marketing digital, trabajamos
               con una variedad de clientes que abarcan diferentes sectores y
@@ -47,12 +51,6 @@ export default function Clientes() {
           Clientes con MIGO
         </h2>
         <section className="flex flex-col bg-bgwhite py-10 text-rosin md:flex-row md:space-x-14 md:px-10">
-          <img
-            src={phone}
-            alt=""
-            className="m-auto min-h-full w-4/5 rounded-3xl object-cover md:w-1/2"
-          />
-
           <div className="mx-auto my-10 w-4/5 space-y-10 text-lg md:font-semibold">
             <div className="m-auto grid grid-cols-3 gap-y-16 md:gap-x-10">
               <div>
