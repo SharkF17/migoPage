@@ -1,6 +1,48 @@
+import { FaGit } from "react-icons/fa";
 import Navbar from "../../components/header/Navbar";
 import marketing from "/marketing.jpg";
 import phone from "/phone.jpg";
+
+const CLIENTES = [
+  {
+    nombre: "Nuestro Bosque",
+    giro: "Kinder",
+    descripcion:
+      "Todo comenzó tocando las puertas de un kínder, al que perteneció la dueña de MIGO. Comenzamos con activar y dar una identidad visual más sólida a la escuela. Se realizó un levantamiento de imagen de la escuela, para utilizarla como contenido orgánico. Establecimos una identidad visual. Trabajamos en conjunto cerca del cierre de ciclo. Creamos un video de graduación, por el tiempo de la pandemia. El equipo MIGO, junto con las maestras del Kínder, realizaron un video de despedida a los alumnos que cerraban el ciclo escolar.",
+  },
+  {
+    nombre: "Joca",
+    giro: "Método JOCA (Psicologia)",
+    descripcion:
+      "El método JOCA, creado por la Dra. Carmen Puga, trabajó con MIGO, para tener una mejor presencia en Redes Sociales. Manejamos Facebook, Instagram, TikTok y YouTube. Todo el contenido creado en ese tiempo fue orgánico. Se crearon clases de estiramiento, las cuáles grabó y editó el equipo de MIGO. Se grabó un en vivo cada semana. Apoyamos en la creación y edición de su segundo libro “De Nuestros Amores Que lo Iluminan Todo”.",
+  },
+  {
+    nombre: "Montse Oscos",
+    giro: "Psicologa",
+    descripcion:
+      "En esta ocasión MIGO fue un complemento para la cliente, ya que en esta situación, la cliente generaba en su mayoría su propio contenido. Se hizo una renovación de página web en su tiempo trabajado, y edición de ciertos videos.",
+  },
+  {
+    nombre: "Nverts/Nssupply",
+    giro: "Consultoria Financiera",
+    descripcion: "Ubicada en Estocolmo, Suecia",
+  },
+  {
+    nombre: "Refricool Costaverde",
+    giro: "Aires Acondicionados",
+    descripcion: "",
+  },
+  {
+    nombre: "Unity",
+    giro: "Corredoras",
+    descripcion: "",
+  },
+  {
+    nombre: "Royal Prestige",
+    giro: "Articulos de Cocina",
+    descripcion: "",
+  },
+];
 
 export default function Clientes() {
   return (
@@ -53,36 +95,12 @@ export default function Clientes() {
         <section className="flex flex-col bg-bgwhite py-10 text-rosin md:flex-row md:space-x-14 md:px-10">
           <div className="mx-auto my-10 w-4/5 space-y-10 text-lg md:font-semibold">
             <div className="m-auto grid grid-cols-3 gap-y-16 md:gap-x-10">
-              <div>
-                <p className="font-semibold text-migomorado">Nuestro Bosque</p>
-                <p>Kinder</p>
-              </div>
-              <div>
-                <p className="font-semibold text-migomorado">Joca</p>
-                <p>Método JOCA {"(Psicologia)"}</p>
-              </div>
-              <div>
-                <p className="font-semibold text-migomorado">
-                  Refricool Costaverde
-                </p>
-                <p>Aires Acondicionados</p>
-              </div>
-              <div>
-                <p className="font-semibold text-migomorado">Nverts</p>
-                <p>Consultoria Financiera</p>
-              </div>
-              <div>
-                <p className="font-semibold text-migomorado">Montse Oscos</p>
-                <p>Psicologa</p>
-              </div>
-              <div>
-                <p className="font-semibold text-migomorado">Unity</p>
-                <p>Corredoras</p>
-              </div>
-              <div>
-                <p className="font-semibold text-migomorado">Royal Prestige</p>
-                <p>Articulos de Cocina</p>
-              </div>
+              {CLIENTES.map(({ nombre, giro, descripcion }) => (
+                <div>
+                  <p className="font-semibold text-migomorado">{nombre}</p>
+                  <p>{giro}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
