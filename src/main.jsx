@@ -10,7 +10,7 @@ import Espacios from "./pages/5.espacios/Espacios.jsx";
 import Blog from "./pages/6.blog/Blog.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import Clientes from "./pages/3.proyectos/Clientes.jsx";
-import Equipo from "./pages/7.equipo/equipo.jsx";
+import Equipo from "./pages/7.equipo/Equipo.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
