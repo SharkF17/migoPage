@@ -10,6 +10,7 @@ import Espacios from "./pages/5.espacios/Espacios.jsx";
 import Blog from "./pages/6.blog/Blog.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import Clientes from "./pages/3.proyectos/Clientes.jsx";
+import Equipo from "./pages/7.equipo/equipo.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/espacios" element={<Espacios />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/equipo" element={<Equipo />} />
       </Routes>
 
       <Footer />

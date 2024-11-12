@@ -3,6 +3,18 @@ import Navbar from "../../components/header/Navbar";
 import marketing from "/marketing.jpg";
 import phone from "/phone.jpg";
 
+let information;
+
+function ShowCardInfo() {
+  information = document.getElementById("Hello");
+  information.classList.add("w-[100%]");
+}
+
+function HideCardInfo() {
+  information = document.getElementById("Hello");
+  information.classList.remove("w-[100%]");
+}
+
 const CLIENTES = [
   {
     nombre: "Nuestro Bosque",
@@ -23,7 +35,7 @@ const CLIENTES = [
       "En esta ocasión MIGO fue un complemento para la cliente, ya que en esta situación, la cliente generaba en su mayoría su propio contenido. Se hizo una renovación de página web en su tiempo trabajado, y edición de ciertos videos.",
   },
   {
-    nombre: "Nverts/Nssupply",
+    nombre: "Nverts/ Nssupply",
     giro: "Consultoria Financiera",
     descripcion: "Ubicada en Estocolmo, Suecia",
   },
@@ -94,11 +106,21 @@ export default function Clientes() {
         </h2>
         <section className="flex flex-col bg-bgwhite py-10 text-rosin md:flex-row md:space-x-14 md:px-10">
           <div className="mx-auto my-10 w-4/5 space-y-10 text-lg md:font-semibold">
-            <div className="m-auto grid grid-cols-3 gap-y-16 md:gap-x-10">
+            <div className="text-wrap m-auto grid grid-cols-2 gap-y-16 md:grid-cols-3 md:gap-x-10">
               {CLIENTES.map(({ nombre, giro, descripcion }) => (
-                <div>
+                <div
+                  className="border"
+                  onMouseEnter={() => ShowCardInfo()}
+                  onMouseLeave={() => HideCardInfo()}
+                >
                   <p className="font-semibold text-migomorado">{nombre}</p>
                   <p>{giro}</p>
+                  <p
+                    id="Hello"
+                    className="text-nowrap fixed z-[100] grid h-full w-[0] place-content-center overflow-hidden bg-orange-500 duration-1000"
+                  >
+                    {descripcion}
+                  </p>
                 </div>
               ))}
             </div>

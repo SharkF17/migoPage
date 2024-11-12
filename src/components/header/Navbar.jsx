@@ -37,6 +37,14 @@ export default function Navbar() {
               Servicios
             </li>
           </a>
+          <a
+            href="/equipo"
+            className="group text-migomorado transition-all duration-300 ease-in-out"
+          >
+            <li class="bg-gradient-to-r from-migomorado to-migomorado bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
+              Equipo
+            </li>
+          </a>
         </ul>
       </nav>
     </>
