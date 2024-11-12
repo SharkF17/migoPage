@@ -1,42 +1,40 @@
 import Navbar from "../../components/header/Navbar";
 import marketing from "/marketing.jpg";
 
+const EQUIPO = [
+  { nombre: "Alejandra Riquelme", puesto: "Directora General" },
+  { nombre: "Jocelin Rojas", puesto: "Diseñadora" },
+  { nombre: "Claudio Ruiz", puesto: "Mercadologo" },
+  { nombre: "Diego Miguel", puesto: "Programador" },
+  { nombre: "Sergio", puesto: "Contador" },
+];
+
 export default function Equipo() {
   return (
     <>
       <Navbar />
-      <div className="">
-        <h2 className="bg-bgwhite pt-10 text-center text-4xl font-extrabold text-migomorado md:px-10 md:py-10 md:text-left md:text-5xl">
-          Equipo
-        </h2>
+      <div className="flex min-h-screen min-w-full flex-col bg-bgwhite md:flex-row">
+        <div className="flex flex-col bg-bgwhite pt-10 text-center text-4xl font-extrabold text-migomorado md:px-10 md:py-10 md:text-left md:text-5xl">
+          <h2>Equipo</h2>
 
-        <section className="flex min-h-screen flex-col bg-bgwhite pb-10 text-rosin md:flex-row md:space-x-14 md:px-10">
-          <div className="mx-auto my-10 w-4/5 space-y-10 text-lg font-semibold">
+          <div className="my-10 w-4/5 space-y-10 text-lg font-semibold">
             <ul className="mt-14 space-y-10">
-              <li>
-                Alejandra Riquelme -{" "}
-                <span className="text-rosin/90">Directora General</span>
-              </li>
-              <li>
-                Jocelin Rojas - <span>Diseñadora</span>
-              </li>
-              <li>
-                Claudio Ruiz - <span>Mercadologo</span>
-              </li>
-              <li>
-                Diego Miguel - <span>Programador</span>
-              </li>
-              <li>
-                Sergio - <span>Contador</span>
-              </li>
+              {EQUIPO.map(({ nombre, puesto }) => (
+                <li>
+                  {nombre + " - "}
+                  <span className="text-rosin/90">{puesto}</span>
+                </li>
+              ))}
             </ul>
           </div>
+        </div>
+        <div className="m-auto bg-bgwhite">
           <img
             src={marketing}
             alt=""
-            className="m-auto min-h-full w-4/5 rounded-3xl object-cover md:w-1/2"
+            className="m-auto w-5/6 rounded-3xl object-cover pb-5 md:w-4/5"
           />
-        </section>
+        </div>
       </div>
     </>
   );
