@@ -42,7 +42,7 @@ const Contenedor = () => {
       id: 6,
       texto: "Royal Prestige",
       giro: "Articulos de Cocina",
-      descripcion: "Descripcion de Rpyal Prestige.",
+      descripcion: "Descripcion de Royal Prestige.",
     },
     {
       id: 7,
