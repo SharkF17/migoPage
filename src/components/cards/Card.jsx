@@ -77,7 +77,7 @@ const Contenedor = () => {
         </div>
       ))}
       {descripcionActiva && (
-        <div className="pointer-events-none absolute inset-0 m-5 flex items-center justify-center bg-black/80 p-4 text-center text-lg text-white transition-opacity duration-300 md:p-20">
+        <div className="pointer-events-none absolute inset-0 m-5 flex items-center justify-center rounded-2xl bg-black/80 p-4 text-center text-lg text-white transition-opacity duration-300 md:p-20">
           {descripcionActiva}
         </div>
       )}
