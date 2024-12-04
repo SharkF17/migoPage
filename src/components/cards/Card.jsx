@@ -60,7 +60,7 @@ const Contenedor = () => {
   const handleMouseLeave = () => {
     timerRef.current = setTimeout(() => {
       setDescripcionActiva(null); // Oculta la descripción después de un retraso.
-    }, 50); // Ajusta el tiempo según sea necesario.
+    }, 200); // Ajusta el tiempo según sea necesario.
   };
 
   return (
