@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 const Contenedor = () => {
-  const [descripcion, setDescripcion] = useState(null);
+  const [descripcionActiva, setDescripcionActiva] = useState(null); // Descripción activa.
+  const timerRef = useRef(null); // Referencia para el temporizador.
 
   const tarjetas = [
     {
@@ -52,31 +53,32 @@ const Contenedor = () => {
   ];
 
   const handleMouseEnter = (descripcionTexto) => {
-    setDescripcion(descripcionTexto);
+    clearTimeout(timerRef.current); // Limpia cualquier temporizador activo.
+    setDescripcionActiva(descripcionTexto); // Muestra la descripción de la tarjeta actual.
   };
 
   const handleMouseLeave = () => {
-    setDescripcion(null);
+    timerRef.current = setTimeout(() => {
+      setDescripcionActiva(null); // Oculta la descripción después de un retraso.
+    }, 50); // Ajusta el tiempo según sea necesario.
   };
 
   return (
-    <div className="relative flex h-80 w-80 flex-wrap items-center justify-center overflow-hidden border-2 border-black bg-white">
+    <div className="relative grid w-full grid-cols-2 flex-wrap items-center justify-center gap-5 overflow-hidden bg-bgwhite p-10 text-lg md:grid-cols-3">
       {tarjetas.map((tarjeta) => (
         <div
           key={tarjeta.id}
-          className="m-1 flex h-24 w-24 cursor-pointer items-center justify-center bg-blue-500 text-center text-white transition-all hover:bg-blue-700"
+          className="m-1 flex cursor-pointer flex-col items-center justify-center border text-center transition-all hover:bg-bgwhite/50"
           onMouseEnter={() => handleMouseEnter(tarjeta.descripcion)}
           onMouseLeave={handleMouseLeave}
         >
-          {tarjeta.texto}
+          <p className="font-semibold text-migomorado">{tarjeta.texto}</p>
+          <p className="text-rosin">{tarjeta.giro}</p>
         </div>
       ))}
-      {descripcion && (
-        <div
-          className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-80 p-4 text-center text-lg text-white transition-opacity duration-300"
-          onMouseLeave={handleMouseLeave} // Esto asegura que desaparezca si el mouse sale.
-        >
-          {descripcion}
+      {descripcionActiva && (
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black bg-opacity-80 p-4 text-center text-lg text-white transition-opacity duration-300">
+          {descripcionActiva}
         </div>
       )}
     </div>
