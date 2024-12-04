@@ -2,6 +2,7 @@ import { FaGit } from "react-icons/fa";
 import Navbar from "../../components/header/Navbar";
 import marketing from "/marketing.jpg";
 import phone from "/phone.jpg";
+import Contenedor from "../../components/cards/Card";
 
 let information;
 
@@ -104,28 +105,7 @@ export default function Clientes() {
         <h2 className="bg-bgwhite px-5 pt-20 text-center text-4xl font-extrabold text-migomorado md:px-10 md:text-left md:text-5xl">
           Clientes con MIGO
         </h2>
-        <section className="flex flex-col bg-bgwhite py-10 text-rosin md:flex-row md:space-x-14 md:px-10">
-          <div className="mx-auto my-10 w-4/5 space-y-10 text-lg md:font-semibold">
-            <div className="text-wrap m-auto grid grid-cols-2 gap-y-16 md:grid-cols-3 md:gap-x-10">
-              {CLIENTES.map(({ nombre, giro, descripcion }) => (
-                <div
-                  className="border"
-                  onMouseEnter={() => ShowCardInfo()}
-                  onMouseLeave={() => HideCardInfo()}
-                >
-                  <p className="font-semibold text-migomorado">{nombre}</p>
-                  <p>{giro}</p>
-                  <p
-                    id="Hello"
-                    className="text-nowrap fixed z-[100] grid h-full w-[0] place-content-center overflow-hidden bg-orange-500 duration-1000"
-                  >
-                    {descripcion}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <Contenedor />
       </div>
     </>
   );

@@ -1,8 +1,86 @@
-export default function Card() {
+import React, { useState } from "react";
+
+const Contenedor = () => {
+  const [descripcion, setDescripcion] = useState(null);
+
+  const tarjetas = [
+    {
+      id: 1,
+      texto: "Nuestro Bosque",
+      giro: "Kinder",
+      descripcion:
+        "Todo comenzó tocando las puertas de un kínder, al que perteneció la dueña de MIGO. Comenzamos con activar y dar una identidad visual más sólida a la escuela. Se realizó un levantamiento de imagen de la escuela, para utilizarla como contenido orgánico. Establecimos una identidad visual. Trabajamos en conjunto cerca del cierre de ciclo. Creamos un video de graduación, por el tiempo de la pandemia. El equipo MIGO, junto con las maestras del Kínder, realizaron un video de despedida a los alumnos que cerraban el ciclo escolar.",
+    },
+    {
+      id: 2,
+      texto: "Metodo Joca",
+      giro: "Psicologia",
+      descripcion:
+        "El método JOCA, creado por la Dra. Carmen Puga, trabajó con MIGO, para tener una mejor presencia en Redes Sociales. Manejamos Facebook, Instagram, TikTok y YouTube. Todo el contenido creado en ese tiempo fue orgánico. Se crearon clases de estiramiento, las cuáles grabó y editó el equipo de MIGO. Se grabó un en vivo cada semana. Apoyamos en la creación y edición de su segundo libro “De Nuestros Amores Que lo Iluminan Todo”.",
+    },
+    {
+      id: 3,
+      texto: "Montse Oscos",
+      giro: "Psicologia",
+      descripcion:
+        "En esta ocasión MIGO fue un complemento para la cliente, ya que en esta situación, la cliente generaba en su mayoría su propio contenido. Se hizo una renovación de página web en su tiempo trabajado, y edición de ciertos videos.",
+    },
+    {
+      id: 4,
+      texto: "Nverts/ Nssupply",
+      giro: "Consultoria Financiera",
+      descripcion: "Ubicada en Estocolmo, Suecia",
+    },
+    {
+      id: 5,
+      texto: "Refricool Costaverde",
+      giro: "Aires Acondicionados",
+      descripcion: "Descripcion de Refricool Costaverde.",
+    },
+    {
+      id: 6,
+      texto: "Royal Prestige",
+      giro: "Articulos de Cocina",
+      descripcion: "Descripcion de Refricool Costaverde.",
+    },
+    {
+      id: 7,
+      texto: "Unity",
+      giro: "Corredoras",
+      descripcion: "Descripcion de Unity.",
+    },
+  ];
+
+  const handleMouseEnter = (descripcionTexto) => {
+    setDescripcion(descripcionTexto);
+  };
+
+  const handleMouseLeave = () => {
+    setDescripcion(null);
+  };
+
   return (
-    <>
-      <h1>Card</h1>
-      <h2>Cards</h2>
-    </>
+    <div className="relative flex h-80 w-80 flex-wrap items-center justify-center overflow-hidden border-2 border-black bg-white">
+      {tarjetas.map((tarjeta) => (
+        <div
+          key={tarjeta.id}
+          className="m-1 flex h-24 w-24 cursor-pointer items-center justify-center bg-blue-500 text-center text-white transition-all hover:bg-blue-700"
+          onMouseEnter={() => handleMouseEnter(tarjeta.descripcion)}
+          onMouseLeave={handleMouseLeave}
+        >
+          {tarjeta.texto}
+        </div>
+      ))}
+      {descripcion && (
+        <div
+          className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-80 p-4 text-center text-lg text-white transition-opacity duration-300"
+          onMouseLeave={handleMouseLeave} // Esto asegura que desaparezca si el mouse sale.
+        >
+          {descripcion}
+        </div>
+      )}
+    </div>
   );
-}
+};
+
+export default Contenedor;
