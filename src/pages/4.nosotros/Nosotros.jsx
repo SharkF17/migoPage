@@ -16,18 +16,18 @@ export default function Nosotros() {
   return (
     <>
       <Navbar />
-      <div className="pt-10 md:px-10 space-y-10">
-        <h2 className="bg-bgwhite text-center text-4xl font-extrabold text-migomorado md:text-left md:text-5xl">
+      <div className="section md:px-10 space-y-10">
+        <h2 className="section-title md:text-left md:text-5xl">
           Nosotros
         </h2>
-        <section className="flex flex-col bg-bgwhite text-rosin md:flex-row md:space-x-14">
+        <section className="flex flex-col-reverse text-rosin md:flex-row md:space-x-14">
           <img
             src={colorido}
             alt=""
             className="m-auto h-[30rem] w-4/5 rounded-3xl object-cover md:w-1/2"
           />
 
-          <div className="mx-auto my-10 w-4/5 space-y-10 text-lg md:font-semibold">
+          <div className="text-center md:text-left mx-auto my-10 w-4/5 space-y-10 text-lg md:font-semibold">
             <p>
               Somos una agencia especializada en{" "}
               <span className="text-migomorado">Comunicación Digital</span> en{" "}

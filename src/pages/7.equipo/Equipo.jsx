@@ -12,12 +12,10 @@ const EQUIPO = [
 export default function Equipo() {
   return (
     <>
-      <div className="flex min-h-screen min-w-full flex-col bg-bgwhite md:flex-row">
-        <div className="flex flex-col bg-bgwhite pt-10 text-center text-4xl font-extrabold text-migomorado md:px-10 md:py-10 md:text-left md:text-5xl">
-          <h2>Equipo</h2>
-
-          <div className="mb-10 w-4/5 space-y-10 text-lg font-semibold md:mt-10">
-            <ul className="mt-14 space-y-10 pl-5 text-left">
+      <div id="equipo-section" className="section md:px-10 space-y-10">
+          <h2 className="section-title md:text-left md:text-5xl">Equipo</h2>
+          <div className="w-full flex flex-col md:flex-row">
+            <ul className="text-lg font-semibold py-5 space-y-10 text-center md:text-left md:w-full">
               {EQUIPO.map(({ nombre, puesto }) => (
                 <li>
                   {nombre + " - "}
@@ -25,16 +23,16 @@ export default function Equipo() {
                 </li>
               ))}
             </ul>
+            <img
+            src={marketing}
+            alt=""
+            className="m-auto h-[30rem] w-4/5 rounded-3xl object-cover md:w-1/2 md:mr-0 md:mt-5"
+          />
           </div>
         </div>
         <div className="m-auto bg-bgwhite">
-          <img
-            src={marketing}
-            alt=""
-            className="m-auto w-4/5 rounded-3xl object-cover pb-5 md:w-4/5"
-          />
+          
         </div>
-      </div>
     </>
   );
 }

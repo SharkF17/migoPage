@@ -9,4 +9,22 @@
         color: theme(colors.migomorado);
         /*color: rgb(123 34 124 / var(--tw-text-opacity, 1)) /* #7b227c */;
     }
+
+    .section {
+        padding-top: 2.5rem /* 40px */;
+        padding-bottom: 2.5rem;
+        --tw-bg-opacity: 1;
+        background-color: theme(colors.bgwhite)
+        /*background-color: rgb(246 245 245 / var(--tw-bg-opacity, 1)) /* #f6f5f5 */;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 2.25rem /* 36px */;
+        line-height: 2.5rem /* 40px */;
+        font-weight: 800;
+        --tw-text-opacity: 1;
+        color: theme(colors.migomorado)
+        /*color: rgb(123 34 124 / var(--tw-text-opacity, 1)) /* #7b227c */;
+    }
 }
