@@ -2,15 +2,25 @@ import Navbar from "../../components/header/Navbar";
 import colorido from "/colorido.jpg";
 import Equipo from "../7.equipo/Equipo"
 
+const STADISTICS = [
+  { stadistic: "Años", num: "3" },
+  { stadistic: "Paises", num: "4" },
+  { stadistic: "Contitnentes", num: "2" },
+  { stadistic: "Clientes", num: "10+" },
+  { stadistic: "Proyectos", num: "10+" },
+  { stadistic: "Contenido Audiovisual", num: "200 hrs+" },
+
+] 
+
 export default function Nosotros() {
   return (
     <>
       <Navbar />
-      <div className="">
-        <h2 className="bg-bgwhite pt-10 text-center text-4xl font-extrabold text-migomorado md:px-10 md:text-left md:text-5xl">
+      <div className="pt-10 md:px-10 space-y-10">
+        <h2 className="bg-bgwhite text-center text-4xl font-extrabold text-migomorado md:text-left md:text-5xl">
           Nosotros
         </h2>
-        <section className="flex flex-col bg-bgwhite py-10 text-rosin md:flex-row md:space-x-14 md:px-10">
+        <section className="flex flex-col bg-bgwhite text-rosin md:flex-row md:space-x-14">
           <img
             src={colorido}
             alt=""
@@ -32,30 +42,12 @@ export default function Nosotros() {
               personalizados.
             </p>
             <div className="m-5 grid grid-cols-3 gap-5">
-              <div>
-                <p className="font-semibold text-migomorado">3</p>
-                <p>Años</p>
-              </div>
-              <div>
-                <p className="font-semibold text-migomorado">4</p>
-                <p>Paises</p>
-              </div>
-              <div>
-                <p className="font-semibold text-migomorado">2</p>
-                <p>Continentes</p>
-              </div>
-              <div>
-                <p className="font-semibold text-migomorado">10+</p>
-                <p>Clientes</p>
-              </div>
-              <div>
-                <p className="font-semibold text-migomorado">10+</p>
-                <p>Proyectos</p>
-              </div>
-              <div>
-                <p className="font-semibold text-migomorado">200 hrs+</p>
-                <p>Contenido Audiovisual</p>
-              </div>
+              {STADISTICS.map(({ stadistic, num }) => (<>
+                <div>
+                  <p className="card-title">{num}</p>
+                  <p>{stadistic}</p>
+                </div>
+              </>))}
             </div>
           </div>
         </section>
