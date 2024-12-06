@@ -1,16 +1,14 @@
 import Navbar from "../../components/header/Navbar";
-import marketing from "/marketing.jpg";
+/*import marketing from "/marketing.jpg";*/
 import services from "/services.jpg";
 
 export default function Servicios() {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen">
-        <section className="bg-azulin/90 flex min-h-screen flex-row px-5 py-10 text-rosin">
-          <div className="m-10 w-1/2 space-y-10">
-            <h2>Servicios</h2>
-          </div>
+      <div className="section md:px-10 space-y-10">
+        <h2 className="section-title md:text-left md:text-5xl">Servicios</h2> 
+        <section className="">
           <img
             src={services}
             alt=""
