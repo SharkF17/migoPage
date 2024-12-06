@@ -1,5 +1,6 @@
 import Navbar from "../../components/header/Navbar";
 import colorido from "/colorido.jpg";
+import Equipo from "../7.equipo/Equipo"
 
 export default function Nosotros() {
   return (
@@ -58,6 +59,9 @@ export default function Nosotros() {
             </div>
           </div>
         </section>
+      </div>
+      <div>
+        <Equipo />
       </div>
     </>
   );
