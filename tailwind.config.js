@@ -11,6 +11,15 @@ export default {
         bgwhite: "#F6F5F5",
         rosin: "#EE99C2",
       },
+      keyframes: {
+        scroll: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-51%)" },
+        },
+      },
+      animation: {
+        scroll: "scroll 30s linear infinite", // Ajusta el tiempo según la longitud del contenido
+      },
     },
   },
   plugins: [],

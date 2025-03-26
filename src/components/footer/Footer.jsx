@@ -4,7 +4,7 @@ import logo from "/logo.svg?url";
 export default function Footer() {
   return (
     <>
-      <div className="relative bottom-0 flex w-full flex-col items-center justify-center space-x-5 bg-migomorado text-white">
+      <div className="flex w-full flex-col items-center justify-center space-x-5 bg-migomorado text-white">
         {/*<div className="flex w-full flex-row justify-around">
           <a href="/blog">Blog</a>
           <a href="/espacios">Espacios</a>

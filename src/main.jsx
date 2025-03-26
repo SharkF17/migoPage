@@ -22,8 +22,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/espacios" element={<Espacios />} />
         <Route path="/blog" element={<Blog />} />
       </Routes>
-
-      <Footer />
     </Router>
-  </React.StrictMode>,
+  </React.StrictMode>
 );
