@@ -20,7 +20,7 @@ export default function Hero() {
     <>
       <header
         id="hero"
-        className="border-azulin h-screen justify-center space-y-16 border-x-8 border-t-8 py-20 text-center"
+        className="relative flex flex-col border-azulin h-dvh justify-center space-y-16 py-20 text-center"
       >
         <div className="flex flex-col items-center justify-center space-y-5">
           <img src={logo} alt="" className="w-48" />
@@ -30,7 +30,7 @@ export default function Hero() {
           </h2>
         </div>
 
-        <div className="text-azulin flex justify-center space-x-10 text-4xl text-[#CC6DCC] py-5 bg-migomorado slidingtext">
+        <div className="absolute bottom-0 left-0 right-0 text-azulin flex justify-center space-x-10 text-4xl text-[#CC6DCC] py-5 bg-migomorado">
           <SlidingText />
         </div>
       </header>
